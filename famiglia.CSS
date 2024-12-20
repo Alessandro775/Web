@@ -1,0 +1,71 @@
+/* Contenitore principale con una larghezza massima del 75% dello schermo e centrato orizzontalmente */
+.wrapper {
+    max-width: 75%; /* Limita la larghezza al 75% dello schermo */
+    margin: auto; /* Centra il contenitore orizzontalmente */
+  }
+  
+  /* Stile per i paragrafi e i titoli direttamente figli di .wrapper */
+  .wrapper > p,
+  .wrapper > h1 {
+    margin: 1.5rem 0; /* Margine superiore e inferiore */
+    text-align: center; /* Allinea il testo al centro */
+  }
+  
+  /* Stile aggiuntivo per il titolo principale (h1) */
+  .wrapper > h1 {
+    letter-spacing: 3px; /* Spaziatura tra le lettere */
+  }
+  
+  /* Stile per i bottoni della domanda */
+  .domanda {
+    background-color: #d0d0d0; /* Colore di sfondo iniziale */
+    color: #000000cc; /* Colore del testo con trasparenza (80%) */
+    cursor: pointer; /* Cambia il cursore a "mano" */
+    font-size: 1.2rem; /* Dimensione del font */
+    width: 100%; /* Larghezza completa */
+    padding: 2rem 2.5rem; /* Spaziatura interna */
+    border: none; /* Rimuove il bordo */
+    outline: none; /* Rimuove il contorno */
+    transition: 0.4s; /* Transizione per effetti visivi */
+    display: flex; /* Dispone gli elementi interni in riga */
+    justify-content: space-between; /* Spaziatura tra gli elementi */
+    align-items: center; /* Allinea verticalmente gli elementi */
+    font-weight: bold; /* Testo in grassetto */
+  }
+  
+  /* Stile per l'icona all'interno della domanda */
+  .domanda i {
+    font-size: 1.6rem; /* Dimensione dell'icona */
+  }
+  
+  /* Stile per la domanda attivo o in hover */
+  .active,
+  .domanda:hover {
+    background-color: #BF9000; /* Cambia il colore di sfondo */
+  }
+  
+  /* Stile per la descrizione associato alla domanda */
+  .descrizione {
+    padding: 0 2rem 2.5rem 2rem; /* Spaziatura interna */
+    background-color: #ebeae5; /* Colore di sfondo del descrizionelo */
+    overflow: hidden; /* Nasconde contenuti fuori area */
+    display: none; /* Nasconde la descrizione per default */
+  }
+  
+  /* Stile per il testo all'interno della descrizione */
+  .descrizione p {
+    color: rgba(0, 0, 0, 0.7); /* Colore del testo con trasparenza */
+    font-size: 1.2rem; /* Dimensione del font */
+    line-height: 1.4; /* Altezza delle righe */
+  }
+  
+  /* Contenitore singolo del suggerimento */
+  .suggerimento {
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Bordo sottile e trasparente */
+    margin: 10px 0; /* Spazio verticale tra il suggerimento */
+  }
+  
+  /* Stile per un suggerimento attivo */
+  .suggerimento.active {
+    border: none; /* Rimuove il bordo quando attivo */
+  }

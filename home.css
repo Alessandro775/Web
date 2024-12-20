@@ -1,9 +1,16 @@
 /* home.css */
 
-header {
+header h1{
   background-color: #bf9000;
    align-items: center;
+   margin-top:-90px /*sposta la scritta sopra*/
 }
+
+.logo img {
+  width: 100px; /* Puoi personalizzare la dimensione dell'immagine */
+  height: auto; /* Mantiene le proporzioni */
+}
+
 
 h1 {
   font-size: 60px;
@@ -11,50 +18,53 @@ h1 {
   align-items: center;
 }
 
-/* Stile per la sezione "services" */
+/* Contenitore generale */
 #services {
-  padding: 50px;
-  display: flex;
-  
+  padding: 20px;
+  height: 100vh; /* Imposta l'altezza per riempire tutto lo schermo */
+  display: flex; /* Usa Flexbox nel contenitore principale */
+  justify-content: center; /* Centra orizzontalmente il contenuto */
+  align-items: center; 
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
-/* Container che contiene i bottoni */
 .services-container {
-  display: flex; /* Abilita il layout Flexbox */
-  justify-content: space-between; /* Spazio uguale tra gli elementi */
-  align-items: center; /* Allinea gli elementi verticalmente al centro */
-  width: 100%; /* Assicura che il container riempia tutta la larghezza */
+  display: flex;
+  flex-direction: column; /* Gli elementi all'interno si dispongono in verticale */
+  align-items: center; /* Centra gli elementi orizzontalmente */
 }
 
-/* Stile per ogni singolo bottone */
-.service button {
-  flex: 1; /* Ogni bottone prende una parte uguale di spazio */
-  padding: 150px 0; /* Aggiunge spazio interno (verticale) */
-  font-size: 35px; /* Imposta la dimensione del testo */
-  margin: 0 10px; /* Aggiunge uno spazio tra i bottoni */
-  border: 1px solid #acacac; /* Aggiunge un bordo sottile */
-  border-radius: 10px; /* Angoli arrotondati */
-  background-color: #dadada; /* Colore di sfondo */
-  color: #000000; /* Colore del testo */
-  cursor: pointer; /* Cambia il cursore al passaggio sopra il bottone */
-  text-align: center; /* Centra il testo all'interno del bottone */
-  transition: background-color 0.3s; /* Aggiunge una transizione per l'effetto hover */
+.row {
+  display: flex; /* Abilita la disposizione orizzontale per i bottoni */
+  width: 100%; /* Il contenitore "row" occupa tutta la larghezza */
+  max-width: 500px; /* Limita la larghezza massima a 500px */
+  justify-content: space-between; /* Spazia i due bottoni all'interno del "row" */
+  margin-bottom: 40px; /* Spazio sotto la riga dei primi due bottoni */
 }
 
-button {
-  width: 270px; /* Larghezza fissa */
-  padding: 15px 20px; /* Padding interno */
-  font-size: 20px; /* Font più grande */
-  border-radius: 10px; /* Angoli arrotondati */
-  background-color: #e0e0e0; /* Colore di sfondo */
+.btn {
+  width: 47%; /* Ogni bottone occupa quasi la metà dello spazio (48% + 48% + spazio tra di loro) */
+  padding: 60px 0; /* Spazio interno al bottone */
+  font-size: 20px; /* Dimensione del testo */
+  border-radius: 50px; /* Arrotondamento degli angoli */
+  background-color: #dedede; /* Colore di sfondo del bottone */
   color: #000000; /* Colore del testo */
   border: none; /* Rimuove il bordo */
-  cursor: pointer; /* Cambia il cursore a mano quando ci si passa sopra */
+  cursor: pointer; /* Cambia il cursore a mano */
+  text-align: center; /* Centra il testo all'interno */
+  transition: background-color 0.3s;
 }
 
-    button:hover {
-        background-color: #bf9000; /* Colore più scuro al passaggio del mouse */
-    }
+.btn:hover {
+  background-color: #bf9000; /* Colore più scuro quando si passa sopra */
+}
+
+.full-width {
+  width: 100%; /* Il terzo pulsante occupa l'intera larghezza */
+  padding: 20px 0; /* Spazio interno al bottone */
+
+}
 
     
     footer {
@@ -62,7 +72,6 @@ button {
       color: #000000;
       text-align: center;
       padding: 10px;
-      position: fixed; /* Mantiene il footer sempre in basso */
       bottom: 0; /* Allinea il footer in fondo alla pagina */
       width: 100%; /* Estende il footer su tutta la larghezza della pagina */
     }
