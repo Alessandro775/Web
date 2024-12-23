@@ -3,7 +3,7 @@
 header h1{
   background-color: #bf9000;
    align-items: center;
-   margin-top:-90px /*sposta la scritta sopra*/
+   margin-top:-90px /sposta la scritta sopra/
 }
 
 .logo img {
@@ -75,4 +75,3 @@ h1 {
       bottom: 0; /* Allinea il footer in fondo alla pagina */
       width: 100%; /* Estende il footer su tutta la larghezza della pagina */
     }
-    
