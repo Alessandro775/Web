@@ -1,9 +1,9 @@
 /* home.css */
 
-header h1{
+header h1 {
   background-color: #bf9000;
-   align-items: center;
-   margin-top:-90px /sposta la scritta sopra/
+  align-items: center;
+  margin-top: -90px; /*sposta la scritta sopra*/
 }
 
 .logo img {
@@ -24,7 +24,7 @@ h1 {
   height: 100vh; /* Imposta l'altezza per riempire tutto lo schermo */
   display: flex; /* Usa Flexbox nel contenitore principale */
   justify-content: center; /* Centra orizzontalmente il contenuto */
-  align-items: center; 
+  align-items: center;
   margin-left: 30px;
   margin-right: 30px;
 }
@@ -32,7 +32,7 @@ h1 {
 .services-container {
   display: flex;
   flex-direction: column; /* Gli elementi all'interno si dispongono in verticale */
-  align-items: center; /* Centra gli elementi orizzontalmente */
+  align-items: center;/* Centra gli elementi orizzontalmente */
 }
 
 .row {
@@ -45,33 +45,33 @@ h1 {
 
 .btn {
   width: 47%; /* Ogni bottone occupa quasi la metà dello spazio (48% + 48% + spazio tra di loro) */
-  padding: 60px 0; /* Spazio interno al bottone */
-  font-size: 20px; /* Dimensione del testo */
-  border-radius: 50px; /* Arrotondamento degli angoli */
-  background-color: #dedede; /* Colore di sfondo del bottone */
-  color: #000000; /* Colore del testo */
-  border: none; /* Rimuove il bordo */
-  cursor: pointer; /* Cambia il cursore a mano */
-  text-align: center; /* Centra il testo all'interno */
+  padding: 60px 0;  /* Spazio interno al bottone */
+  font-size: 20px;  /* Dimensione del testo */
+  border-radius: 50px;  /* Arrotondamento degli angoli */
+  background-color: #dedede;  /* Colore di sfondo del bottone */
+  color: #000000;  /* Colore del testo */
+  border: none;  /* Rimuove il bordo */
+  cursor: pointer;  /* Cambia il cursore a mano */
+  text-align: center;  /* Centra il testo all'interno */
   transition: background-color 0.3s;
 }
 
 .btn:hover {
-  background-color: #bf9000; /* Colore più scuro quando si passa sopra */
+  background-color: #bf9000;  /* Colore più scuro quando si passa sopra */
 }
 
 .full-width {
-  width: 100%; /* Il terzo pulsante occupa l'intera larghezza */
-  padding: 20px 0; /* Spazio interno al bottone */
+  width: 100%;  /* Il terzo pulsante occupa l'intera larghezza */
+  padding: 20px 0;  /* Spazio interno al bottone */
 
 }
 
-    
-    footer {
-      background-color: #bf9000;
-      color: #000000;
-      text-align: center;
-      padding: 10px;
-      bottom: 0; /* Allinea il footer in fondo alla pagina */
-      width: 100%; /* Estende il footer su tutta la larghezza della pagina */
-    }
+
+footer {
+  background-color: #bf9000;
+  color: #000000;
+  text-align: center;
+  padding: 10px;
+  bottom: 0; /* Allinea il footer in fondo alla pagina */
+  width: 100%;  /* Estende il footer su tutta la larghezza della pagina */
+}
