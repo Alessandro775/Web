@@ -1,16 +1,38 @@
 header h1{
-    background-color: #bf9000;
-     align-items: center;
-     margin-top:-90px /*sposta la scritta sopra*/
-  }
-  
-  .logo img {
-    width: 100px; /* Puoi personalizzare la dimensione dell'immagine */
-    height: auto; /* Mantiene le proporzioni */
+  background-color: #bf9000;
+   align-items: center;
+   margin-top:-90px /*sposta la scritta sopra*/
+}
+
+.logo img {
+  width: 100px; /* Puoi personalizzare la dimensione dell'immagine */
+  height: auto; /* Mantiene le proporzioni */
 }
 
 h1 {
-    font-size: 60px;
-    text-align: center;
-    align-items: center;
-  }
+  font-size: 60px;
+  text-align: center;
+  align-items: center;
+}
+
+
+/* styles.css */
+.empty-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.empty-table th,
+.empty-table td {
+  border: 1px solid #dddddd;
+  padding: 10px;
+  height: 40px;
+}
+
+.empty-table thead th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
